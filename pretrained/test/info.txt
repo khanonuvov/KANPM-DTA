@@ -1,0 +1,1 @@
+Here will be the pretrained file of test drugs, test proteins and proteins contact map. Like (test_chem_pretrained.pkl, test_esmc_pretrain.pkl, test_esm2_contact_map.pkl)

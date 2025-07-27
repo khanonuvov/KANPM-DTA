@@ -1,1 +1,0 @@
-Here will be the pretrained file of davis drugs, davis proteins and proteins contact map. Like (davis_chem_pretrained.pkl, davis_esmc_pretrain.pkl, davis_esm2_contact_map.pkl)

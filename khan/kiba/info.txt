@@ -1,1 +1,0 @@
-Here will be the pretrained file of kiba drugs, kiba proteins and proteins contact map. Like (kiba_chem_pretrained.pkl, kiba_esmc_pretrain.pkl, kiba_esm2_contact_map.pkl)

@@ -1,0 +1,1 @@
+Here will be the pretrained file of metz drugs, metz proteins and proteins contact map. Like (metz_chem_pretrained.pkl, metz_esmc_pretrain.pkl, metz_esm2_contact_map.pkl)

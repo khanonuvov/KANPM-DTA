@@ -33,7 +33,7 @@ cd GSIK-DTA
 <pre><code>python main.py</code></pre>
 
 <h2 id="Prediction">Prediction</h2>
-<pre><code>python pred.py</code></pre
+<pre><code>python pred.py</code></pre>
 
 <h2 id="contact">Contact</h2>
 <p>

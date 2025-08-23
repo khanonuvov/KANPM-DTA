@@ -24,6 +24,7 @@ cd GSIK-DTA
 
 <h2 id="step-2-Generate Pretrained Models">Step 2: Generate Pretrained Models</h2>
 <p>For each dataset (<code>davis</code>, <code>kiba</code>, <code>metz</code>, <code>Lung Cancer (EGFR) Test</code>) run these three commands:</p>
+
 <pre><code>python pretrained/chemberta_pretraiend.py</code></pre>
 <pre><code>python pretrained/esmC_pretraiend.py</code></pre>
 <pre><code>python pretrained/esm2_map.py</code></pre>

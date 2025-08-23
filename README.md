@@ -9,12 +9,13 @@
 <h2 id="requirements">Requirements</h2>
 <hr>
 <ul>
-  <li>Python 3.10+</li>
-  <li>numpy==1.26.4</li>
-  <li>torch==2.3.1</li>
-  <li>transformers==4.42.3</li>
-  <li>scikit-learn==1.5.0</li>
-  <li>pandas==2.2.2</li>
+  <li>Python 3.9.21</li>
+  <li>numpy==2.0.2</li>
+  <li>pandas==2.2.3</li>
+  <li>torch==2.6.0</li>
+  <li>transformers==4.49.0</li>
+  <li>rdkit==2024.3.2</li>
+  <li>fair-esm==2.0.0</li>
 </ul>
 
 <h2 id="step-1-clone-repository">Step 1: Clone Repository</h2>

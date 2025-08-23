@@ -34,7 +34,6 @@ cd GSIK-DTA
 </code></pre>
 
 <h2 id="contact">Contact</h2>
-<hr>
 <p>
   For inquiries, please contact
   <strong>Md Youshuf Khan Rakib</strong> —

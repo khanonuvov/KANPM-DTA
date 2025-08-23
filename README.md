@@ -30,8 +30,10 @@ cd GSIK-DTA
 <pre><code>python pretrained/esm2_map.py</code></pre>
 
 <h2 id="step-3-Train the Model">Step 3: Train the Model</h2>
-<pre><code>python main.py
-</code></pre>
+<pre><code>python main.py</code></pre>
+
+<h2 id="step-4-Prediction">Step 3: Prediction</h2>
+<pre><code>python pred.py</code></pre
 
 <h2 id="contact">Contact</h2>
 <p>

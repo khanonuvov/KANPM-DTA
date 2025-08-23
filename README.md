@@ -27,20 +27,19 @@ cd GSIK-DTA
 
 <p>For each dataset (<code>davis</code>, <code>kiba</code>, <code>metz</code>, <code>test</code>) run these three commands:</p>
 
-<pre><code># DRUG (SMILES) → ChemBERTa
-python pretrained/chemberta_pretraiend.py \
-  --smiles_csv data/&lt;DATASET&gt;/drugs.csv \
-  --out_dir pretrained/&lt;DATASET&gt;/chemberta
+<p>SMILES</p>
+<pre><code>
+python pretrained/chemberta_pretraiend.py
+</code></pre>
 
-# PROTEIN sequence (FASTA) → ESM-Cambrian
-python pretrained/esmC_pretraiend.py \
-  --fasta data/&lt;DATASET&gt;/proteins.fasta \
-  --out_dir pretrained/&lt;DATASET&gt;/esmc
+<p>PROTEIN sequence (FASTA) → ESM-Cambrian</p>
+<pre><code>
+python pretrained/esmC_pretraiend.py
+</code></pre>
 
-# PROTEIN contact map (from same FASTA) → ESM-2
-python pretrained/esm2_map.py \
-  --fasta data/&lt;DATASET&gt;/proteins.fasta \
-  --out_dir pretrained/&lt;DATASET&gt;/esm2
+<p># PROTEIN contact map (from same FASTA) → ESM-2</p>
+<pre><code>
+python pretrained/esm2_map.py
 </code></pre>
 
 <p>Outputs are saved under <code>pretrained/&lt;DATASET&gt;/</code>.</p>
@@ -48,16 +47,10 @@ python pretrained/esm2_map.py \
 <hr>
 
 <h4>Lung Cancer (EGFR) Test</h4>
-<ul>
-  <li><strong>Drug</strong>: ChemBERTa (SMILES)</li>
-  <li><strong>Protein sequence</strong>: ESM-Cambrian (EGFR FASTA)</li>
-  <li><strong>Protein contact map</strong>: ESM-2 (same EGFR FASTA)</li>
-</ul>
-
 <pre><code># Example for EGFR
-python pretrained/chemberta_pretraiend.py --smiles_csv data/test/drugs.csv --out_dir pretrained/test/chemberta
-python pretrained/esmC_pretraiend.py     --fasta data/test/egfr.fasta     --out_dir pretrained/test/esmc
-python pretrained/esm2_map.py            --fasta data/test/egfr.fasta     --out_dir pretrained/test/esm2
+python pretrained/chemberta_pretraiend.py
+python pretrained/esmC_pretraiend.py
+python pretrained/esm2_map.py
 </code></pre>
 
 

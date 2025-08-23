@@ -23,35 +23,21 @@ cd GSIK-DTA
 </code></pre>
 
 <h2 id="step-2-Generate Pretrained Models">Step 2: Generate Pretrained Models</h2>
-<p>For each dataset (<code>davis</code>, <code>kiba</code>, <code>metz</code>, <code>test</code>) run these three commands:</p>
+<p>For each dataset (<code>davis</code>, <code>kiba</code>, <code>metz</code>) run these three commands:</p>
 
 <h4>Drug Sequence (SMILES) → Chembarta-2</h4>
-<pre><code>
-python pretrained/chemberta_pretraiend.py
-</code></pre>
+<pre><code>python pretrained/chemberta_pretraiend.py</code></pre>
 
 <h4>Protein sequence (FASTA) → ESM-Cambrian</h4>
-<pre><code>
-python pretrained/esmC_pretraiend.py
-</code></pre>
+<pre><code>python pretrained/esmC_pretraiend.py</code></pre>
 
 <h4>Protein contact map (from same FASTA) → ESM-2</h4>
-<pre><code>
-python pretrained/esm2_map.py
-</code></pre>
-
-<p>Outputs are saved under <code>pretrained/&lt;DATASET&gt;/</code>.</p>
-
-<hr>
+<pre><code>python pretrained/esm2_map.py</code></pre>
 
 <h4>Lung Cancer (EGFR) Test</h4>
-<pre><code># Example for EGFR
-python pretrained/chemberta_pretraiend.py
-python pretrained/esmC_pretraiend.py
-python pretrained/esm2_map.py
-</code></pre>
-
-
+<pre><code>python pretrained/chemberta_pretraiend.py</code></pre>
+<pre><code>python pretrained/esmC_pretraiend.py</code></pre>
+<pre><code>python pretrained/esm2_map.py</code></pre>
 
 <h2 id="step-3-Train the Model">Step 3: Train the Model</h2>
 <pre><code>python main.py

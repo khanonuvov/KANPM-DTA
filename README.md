@@ -23,21 +23,19 @@ cd GSIK-DTA
 </code></pre>
 
 <h2 id="step-2-Generate Pretrained Models">Step 2: Generate Pretrained Models</h2>
-<h3>Step 2: Generate Pretrained Features (SUPER SIMPLE)</h3>
-
 <p>For each dataset (<code>davis</code>, <code>kiba</code>, <code>metz</code>, <code>test</code>) run these three commands:</p>
 
-<p>SMILES</p>
+<h4>Drug Sequence (SMILES) → Chembarta-2</h4>
 <pre><code>
 python pretrained/chemberta_pretraiend.py
 </code></pre>
 
-<p>PROTEIN sequence (FASTA) → ESM-Cambrian</p>
+<h4>Protein sequence (FASTA) → ESM-Cambrian</h4>
 <pre><code>
 python pretrained/esmC_pretraiend.py
 </code></pre>
 
-<p># PROTEIN contact map (from same FASTA) → ESM-2</p>
+<h4>Protein contact map (from same FASTA) → ESM-2</h4>
 <pre><code>
 python pretrained/esm2_map.py
 </code></pre>

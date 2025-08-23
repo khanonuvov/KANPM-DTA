@@ -38,6 +38,6 @@ cd GSIK-DTA
 <h2 id="contact">Contact</h2>
 <p>
   For inquiries, please contact
-  <strong>Md Youshuf Khan Rakib</strong> —
-  <a href="mailto:khanushuf4619@csu.edu.cn">khanushuf4619@csu.edu.cn</a>.
+  <strong>Md Youshuf Khan Rakib</strong>(
+  <a href="mailto:Email: khanushuf4619@csu.edu.cn">Email: khanushuf4619@csu.edu.cn</a>).
 </p>

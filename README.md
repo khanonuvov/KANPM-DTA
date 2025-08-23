@@ -23,20 +23,20 @@ cd GSIK-DTA
 </code></pre>
 
 <h2 id="Generate Pretrained Models">Generate Pretrained Models</h2>
-<p>For each dataset (<code>davis</code>, <code>kiba</code>, <code>metz</code>, <code>Lung Cancer Test</code>) run these three commands or download the pretrained models from this <a href="">site</a>:</p>
+<p>For each dataset (<code>davis</code>, <code>kiba</code>, <code>metz</code>, <code>Lung Cancer Test</code>) run these three commands or download the pretrained models from <a href=""><code>here</code></a>.</p>
 
 <pre><code>python pretrained/chemberta_pretraiend.py</code></pre>
 <pre><code>python pretrained/esmC_pretraiend.py</code></pre>
 <pre><code>python pretrained/esm2_map.py</code></pre>
 
-<h2 id="Generate Cold-start Datasets">Generate Cold-start datasets</h2>
-<pre><code>python cold_split.py</code></pre>
+<h2 id="Generate Cold-start Datasets">Generate Cold-start Datasets</h2>
+<pre><code>python code/cold_split.py</code></pre>
 
 <h2 id="Train the Model">Train the Model</h2>
-<pre><code>python main.py</code></pre>
+<pre><code>python code/main.py</code></pre>
 
 <h2 id="Prediction">Prediction</h2>
-<pre><code>python pred.py</code></pre>
+<pre><code>python code/pred.py</code></pre>
 
 <h2 id="contact">Contact</h2>
 <p>

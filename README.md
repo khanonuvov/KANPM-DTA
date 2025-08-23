@@ -17,22 +17,22 @@
   <li>fair-esm==2.0.0</li>
 </ul>
 
-<h2 id="step-1-clone-repository">Step 1: Clone Repository</h2>
+<h2 id="clone-repository">Clone Repository</h2>
 <pre><code>git clone https://github.com/khanonuvov/GSIK-DTA.git
 cd GSIK-DTA
 </code></pre>
 
-<h2 id="step-2-Generate Pretrained Models">Step 2: Generate Pretrained Models</h2>
+<h2 id="Generate Pretrained Models">Generate Pretrained Models</h2>
 <p>For each dataset (<code>davis</code>, <code>kiba</code>, <code>metz</code>, <code>Lung Cancer (EGFR) Test</code>) run these three commands:</p>
 
 <pre><code>python pretrained/chemberta_pretraiend.py</code></pre>
 <pre><code>python pretrained/esmC_pretraiend.py</code></pre>
 <pre><code>python pretrained/esm2_map.py</code></pre>
 
-<h2 id="step-3-Train the Model">Step 3: Train the Model</h2>
+<h2 id="Train the Model">Train the Model</h2>
 <pre><code>python main.py</code></pre>
 
-<h2 id="step-4-Prediction">Step 3: Prediction</h2>
+<h2 id="Prediction">Prediction</h2>
 <pre><code>python pred.py</code></pre
 
 <h2 id="contact">Contact</h2>

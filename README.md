@@ -7,7 +7,6 @@
 <p align="center"><em>Figure 1. GSIK-DTA model architecture.</em></p>
 
 <h2 id="requirements">Requirements</h2>
-<hr>
 <ul>
   <li>Python 3.9.21</li>
   <li>numpy==2.0.2</li>
@@ -19,17 +18,14 @@
 </ul>
 
 <h2 id="step-1-clone-repository">Step 1: Clone Repository</h2>
-<hr>
 <pre><code>git clone https://github.com/khanonuvov/GSIK-DTA.git
 cd GSIK-DTA
 </code></pre>
 
-<h2 id="step-2-Generate Pretrained Models">Step 2: Install Requirements</h2>
-<hr>
+<h2 id="step-2-Generate Pretrained Models">Step 2: Generate Pretrained Models</h2>
 
 
-<h2 id="step-3-Train the Model">Step 3: Run the Project</h2>
-<hr>
+<h2 id="step-3-Train the Model">Step 3: Train the Model</h2>
 <pre><code>python main.py
 </code></pre>
 

@@ -5,7 +5,7 @@ class HyperParameter:
     def __init__(self):
         self.current_time = datetime.now().strftime('%b%d_%H-%M-%S')
         self.kfold = 1
-        self.data_root = '/homeb/habibulla/GSIK-DTA/datasets'
+        self.data_root = './GSIK-DTA/datasets'
         self.dataset = 'davis'
         self.running_set = 'warm'
         self.dataset_columns = ['drug_key', 'target_key', 'affinity']

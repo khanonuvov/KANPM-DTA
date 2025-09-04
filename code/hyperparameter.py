@@ -4,7 +4,6 @@ from datetime import datetime
 class HyperParameter:
     def __init__(self):
         self.current_time = datetime.now().strftime('%b%d_%H-%M-%S')
-        self.kfold = 1
         self.data_root = './GSIK-DTA/datasets'
         self.dataset = 'davis'
         self.running_set = 'warm'

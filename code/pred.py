@@ -79,7 +79,7 @@ predModel.load_state_dict(torch.load(model_fromTrain))
 predModel = predModel.to(device)    
 preds = test(predModel, test_dataset_load)
 print('preds: ', preds)
-print('✅ Predictions generated!')
+print('Predictions generated!')
 
 assert len(test_df) == len(preds), "Error: Length mismatch!"
 
@@ -90,9 +90,9 @@ results_df = pd.DataFrame({
     'prediction': preds
 })
 
-output_csv = '/homeb/habibulla/GSIK-DTA/preds.csv'
+output_csv = './GSIK-DTA/preds.csv'
 results_df.to_csv(output_csv, index=False)
 
-print(f"✅ Results saved to {output_csv}")
+print(f"Results saved to {output_csv}")
 
 

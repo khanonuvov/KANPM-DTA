@@ -4,15 +4,15 @@ from datetime import datetime
 class HyperParameter:
     def __init__(self):
         self.current_time = datetime.now().strftime('%b%d_%H-%M-%S')
-        self.data_root = './GSIK-DTA/datasets'
+        self.data_root = './KANPM-DTA/datasets'
         self.dataset = 'davis'
         self.running_set = 'warm'
         self.dataset_columns = ['drug_key', 'target_key', 'affinity']
         self.is_esm=True
         
-        self.mol2vec_dir = './GSIK-DTA/pretrained/{self.dataset}/{self.dataset}_chem_pretrained.pkl'
-        self.protvec_dir = './GSIK-DTA/pretrained/{self.dataset}/{self.dataset}_esmc_pretrain.pkl'
-        self.contact_map = './GSIK-DTA/pretrained/{self.dataset}/{self.dataset}_esm2_contact_map.pkl'        
+        self.mol2vec_dir = './KANPM-DTA/pretrained/{self.dataset}/{self.dataset}_chem_pretrained.pkl'
+        self.protvec_dir = './KANPM-DTA/pretrained/{self.dataset}/{self.dataset}_esmc_pretrain.pkl'
+        self.contact_map = './KANPM-DTA/pretrained/{self.dataset}/{self.dataset}_esm2_contact_map.pkl'        
         self.drugs_dir = f'{self.data_root}/{self.dataset}/{self.dataset}_drugs.csv'   
         self.prots_dir = f'{self.data_root}/{self.dataset}/{self.dataset}_prots.csv'   
 
@@ -31,8 +31,8 @@ class HyperParameter:
 
     def set_dataset(self, data_name):
         self.dataset = data_name
-        self.mol2vec_dir = './GSIK-DTA/pretrained/{self.dataset}/{self.dataset}_chem_pretrained.pkl'
-        self.protvec_dir = './GSIK-DTA/pretrained/{self.dataset}/{self.dataset}_esmc_pretrain.pkl'
-        self.contact_map = './GSIK-DTA/pretrained/{self.dataset}/{self.dataset}_esm2_contact_map.pkl'           
+        self.mol2vec_dir = './KANPM-DTA/pretrained/{self.dataset}/{self.dataset}_chem_pretrained.pkl'
+        self.protvec_dir = './KANPM-DTA/pretrained/{self.dataset}/{self.dataset}_esmc_pretrain.pkl'
+        self.contact_map = './KANPM-DTA/pretrained/{self.dataset}/{self.dataset}_esm2_contact_map.pkl'           
         self.drugs_dir = f'{self.data_root}/{self.dataset}/{self.dataset}_drugs.csv'   
         self.prots_dir = f'{self.data_root}/{self.dataset}/{self.dataset}_prots.csv'

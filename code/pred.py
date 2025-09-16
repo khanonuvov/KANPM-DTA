@@ -58,7 +58,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 # pretrained model pth 
-model_fromTrain =  './GSIK-DTA/savemodel/saved_model.pth'
+model_fromTrain =  './KANPM-DTA/savemodel/saved_model.pth'
 
 
 drug_df = pd.read_csv(hp.drugs_dir)
@@ -68,7 +68,7 @@ protvec_dict = load_pickle(hp.protvec_dir)
 contact_map = load_pickle(hp.contact_map)
 
 
-test_dir = './GSIK-DTA/datasets/test/test.csv'
+test_dir = './KANPM-DTA/datasets/test/test.csv'
 test_df = pd.read_csv(test_dir)
 test_set = CustomDataSet(test_df, hp)
 test_dataset_load = DataLoader(test_set, batch_size=hp.Batch_size, shuffle=False, drop_last=False, num_workers=8, collate_fn=lambda x: my_collate_fn(x, device, hp, drug_df, prot_df, mol2vec_dict, protvec_dict, contact_map))
@@ -90,7 +90,7 @@ results_df = pd.DataFrame({
     'prediction': preds
 })
 
-output_csv = './GSIK-DTA/preds.csv'
+output_csv = './KANPM-DTA/preds.csv'
 results_df.to_csv(output_csv, index=False)
 
 print(f"Results saved to {output_csv}")

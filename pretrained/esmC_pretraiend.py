@@ -42,7 +42,7 @@ def get_esmc_pretrain(model, df_dir, db_name):
         length_target[prot_id] = len(seq)
 
     # Save embeddings to pickle
-    with open(f'./GSIK-DTA/pretrained/{db_name}/{db_name}_esmc_pretrain.pkl', 'wb') as f:
+    with open(f'./KANPM-DTA/pretrained/{db_name}/{db_name}_esmc_pretrain.pkl', 'wb') as f:
         pickle.dump({
             "dataset": db_name,
             "vec_dict": emb_dict,
@@ -54,8 +54,9 @@ def get_esmc_pretrain(model, df_dir, db_name):
 
 
 db_names = ['davis', 'kiba', 'metz']
-df_dirs = [r'./GSIK-DTA/datasets/davis/davis_prots.csv', r'./GSIK-DTA/datasets/kiba/kiba_prots.csv', r'./GSIK-DTA/datasets/metz/metz_prots.csv']
+df_dirs = [r'./KANPM-DTA/datasets/davis/davis_prots.csv', r'./KANPM-DTA/datasets/kiba/kiba_prots.csv', r'./KANPM-DTA/datasets/metz/metz_prots.csv']
 
 for i in range(0,3):
     print(f'Compute {df_dirs[i]} protein pretrain feature by esm-c.')
+
     get_esm_contact_map(model, df_dirs[i], db_names[i])

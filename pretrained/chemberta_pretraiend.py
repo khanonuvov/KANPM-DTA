@@ -41,15 +41,16 @@ def get_chem_pretrain(df_dir, db_name, max_smiles_length=220):
         embeddings["length_dict"][drug_id] = len(smile)
     
     # Save embeddings
-    output_path = f'./GSIK-DTA/pretrained/{db_name}/{db_name}_chem_pretrained.pkl'
+    output_path = f'./KANPM-DTA/pretrained/{db_name}/{db_name}_chem_pretrained.pkl'
     with open(output_path, 'wb') as f:
         pickle.dump(embeddings, f)
     
     print(f"Saved embeddings for {len(embeddings['vec_dict'])} compounds to {output_path}")
 
 db_names = ['davis', 'kiba', 'metz']
-df_dirs = [r'./GSIK-DTA/datasets/davis/davis_drugs.csv', r'./GSIK-DTA/datasets/kiba/kiba_drugs.csv', r'./GSIK-DTA/datasets/metz/metz_drugs.csv']
+df_dirs = [r'./KANPM-DTA/datasets/davis/davis_drugs.csv', r'./KANPM-DTA/datasets/kiba/kiba_drugs.csv', r'./KANPM-DTA/datasets/metz/metz_drugs.csv']
 
 for i in range(0,3):
     print(f'Compute {df_dirs[i]} drug pretrain feature by Chemberta-2.')
+
     get_esm_contact_map(model, df_dirs[i], db_names[i])

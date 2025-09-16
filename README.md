@@ -18,8 +18,8 @@
 </ul>
 
 <h2 id="clone-repository">Clone Repository</h2>
-<pre><code>git clone https://github.com/khanonuvov/GSIK-DTA.git
-cd GSIK-DTA
+<pre><code>git clone https://github.com/khanonuvov/KANPM-DTA.git
+cd KANPM-DTA
 </code></pre>
 
 <h2 id="Generate Pretrained Models">Generate Pretrained Models</h2>

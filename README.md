@@ -1,10 +1,10 @@
-<h1 id="gsik-dta">GSIK-DTA: Graph-Sequence Integration with Kolmogorov–Arnold Networks for Improving Generalizability of Drug–Target Affinity Prediction</h1>
+<h1 id="gsik-dta">KANPM-DTA: Improving Drug-Target Affinity Prediction with Kolmogorov-Arnold Networks and Pre-trained Models</h1>
 
 <p align="center">
   <!-- Adjust width as needed (e.g., 800–1100) -->
   <img src="images/architecture.png" alt="Model Architecture" width="900">
 </p>
-<p align="center"><em>Figure 1. GSIK-DTA model architecture.</em></p>
+<p align="center"><em>Figure 1. KANPM-DTA model architecture.</em></p>
 
 <h2 id="requirements">Requirements</h2>
 <ul>

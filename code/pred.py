@@ -84,9 +84,9 @@ print('Predictions generated!')
 assert len(test_df) == len(preds), "Error: Length mismatch!"
 
 results_df = pd.DataFrame({
-    'drug_id': test_df['drug_id'],
-    'drug_names': test_df['names'],
-    'protein_id': test_df['prot_id'],
+    'drug_id': test_df['drug_key'],
+    'drug_names': test_df['drug_names'],
+    'protein_id': test_df['target_key'],
     'prediction': preds
 })
 

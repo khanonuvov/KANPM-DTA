@@ -99,9 +99,9 @@ def create_fold_setting_cold(df, fold_seed, frac, entities):
         "test": test.reset_index(drop=True),
     }
 
-dataset = 'davis'
+dataset = 'davis' #kiba, metz
 
-SEED = 42
+SEED = 42 # 41, 33, 16, 15
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -110,8 +110,14 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     # read data
-    df = pd.read_csv("/homeb/habibulla/final/datasets/" + args.dataset + "/data.csv")
+    df = pd.read_csv("./KANPM-DTA/datasets/" + args.dataset + "/data.csv")
     # create folds
+    warm_fold = create_fold(df, args.SEED, [0.8, 0.1, 0.1])
+    warm_fold["train"].to_csv("./KANPM-DTA/datasets/" + args.dataset + "/warm/" + "train.csv", index=False)
+    warm_fold["valid"].to_csv("./KANPM-DTA/datasets/" + args.dataset + "/warm/" + "valid.csv", index=False)
+    warm_fold["test"].to_csv("./KANPM-DTA/datasets/" + args.dataset + "/warm/" + "test.csv", index=False)
+    print(args.dataset+ " warm_fold done!  the shape of train, valid, test are: ", warm_fold["train"].shape, warm_fold["valid"].shape, warm_fold["test"].shape)
+    
     cold_target_fold = create_fold_setting_cold(df, args.SEED, [0.8, 0.1, 0.1], ['target_key'])
     cold_target_fold["train"].to_csv("./KANPM-DTA/datasets/" + args.dataset + "/unseen-prot/" + "train.csv", index=False)
     cold_target_fold["valid"].to_csv("./KANPM-DTA/datasets/" + args.dataset + "/unseen-prot/" + "valid.csv", index=False)

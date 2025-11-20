@@ -5,10 +5,8 @@ class HyperParameter:
     def __init__(self):
         self.current_time = datetime.now().strftime('%b%d_%H-%M-%S')
         self.data_root = './KANPM-DTA/datasets'
-        self.dataset = 'davis'
-        self.running_set = 'warm'
-        self.dataset_columns = ['drug_key', 'target_key', 'affinity']
-        self.is_esm=True
+        self.dataset = 'davis' #kiba, metz
+        self.running_set = 'warm' #novel-drug, novel-prot, novel-pair
         
         self.mol2vec_dir = './KANPM-DTA/pretrained/{self.dataset}/{self.dataset}_chem_pretrained.pkl'
         self.protvec_dir = './KANPM-DTA/pretrained/{self.dataset}/{self.dataset}_esmc_pretrain.pkl'

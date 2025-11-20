@@ -29,7 +29,7 @@ cd KANPM-DTA
 <pre><code>python pretrained/esmC_pretraiend.py</code></pre>
 <pre><code>python pretrained/esm2_map.py</code></pre>
 
-<h2 id="Generate Cold-start Datasets">Generate Cold-start Datasets</h2>
+<h2 id="Generate Warm & Cold-start Datasets">Generate Cold-start Datasets</h2>
 <pre><code>python code/cold_split.py</code></pre>
 
 <h2 id="Train the Model">Train the Model</h2>

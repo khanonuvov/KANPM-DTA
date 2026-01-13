@@ -53,5 +53,6 @@ df_dirs = [r'./KANPM-DTA/datasets/davis/davis_drugs.csv', r'./KANPM-DTA/datasets
 for i in range(0,3):
     print(f'Compute {df_dirs[i]} drug pretrain feature by Chemberta-2.')
 
-    get_chem_pretrain(model, df_dirs[i], db_names[i])
+    get_chem_pretrain(df_dirs[i], db_names[i])
+
 

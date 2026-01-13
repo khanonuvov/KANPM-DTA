@@ -59,4 +59,5 @@ df_dirs = [r'./KANPM-DTA/datasets/davis/davis_prots.csv', r'./KANPM-DTA/datasets
 for i in range(0,3):
     print(f'Compute {df_dirs[i]} protein pretrain feature by esm-c.')
 
-    get_esm_contact_map(model, df_dirs[i], db_names[i])
+    get_esmc_pretrain(model, df_dirs[i], db_names[i])
+
